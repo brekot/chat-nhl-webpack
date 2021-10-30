@@ -1,0 +1,46 @@
+<div class="chat-bot">
+    <a href="javascript:;" class="chat-bot-btn js-chat-toggle-window">
+        <div class="chat-bot-btn__bg"></div>
+        <div class="chat-bot-btn__shadow"></div>
+        <svg class="chat-bot-btn__icon">
+            <use xlink:href="./chat/chat.svg#btn"></use>
+        </svg>
+    </a>
+    <div class="chat-bot-window">
+        <div class="chat-bot-window__block">
+            <div class="chat-bot-head">
+                <a href="javascript:;" data-tab="chat-bot-bot" class="chat-bot-head__link js-chat-toggle-tab chat-bot-head__link_active">Спросить у Филина</a>
+                <a href="javascript:;" data-tab="chat-bot-chat" class="chat-bot-head__link js-chat-toggle-tab">Чат</a>
+                <a href="javascript:;" class="chat-bot-head__zoom js-chat-toggle-zoom">
+                    <svg class="chat-bot-head__zoom-icon">
+                        <use xlink:href="./chat/chat.svg#zoom"></use>
+                    </svg>
+                </a>
+                <a href="javascript:;" class="chat-bot-head__close js-chat-toggle-window"></a>
+            </div>
+            <div class="chat-bot-body chat-bot-body_active" id="chat-bot-bot">
+                <div class="chat-bot-bot scroll-pane">
+                    <div class="chat-bot-bot__block">
+                        <div class="chat-bot-bot__question">
+                            <svg class="chat-bot-bot__question-icon">
+                                <use xlink:href="./chat/chat.svg#owl"></use>
+                            </svg>
+                            Привет! Я бот, который отвечает на вопросы. Пожалуйста, укажите тему вопроса.
+                        </div>
+                        <a href="javascript:;" class="chat-bot-bot__answer">Все термины</a>
+                        <a href="javascript:;" class="chat-bot-bot__answer chat-bot-bot__answer_active">Главный судья матча</a>
+                        <a href="javascript:;" class="chat-bot-bot__answer">Главный судья НХЛ</a>
+                        <a href="javascript:;" class="chat-bot-bot__answer">Главный судья Региона</a>
+                        <a href="javascript:;" class="chat-bot-bot__answer">Дивизион</a>
+                        <div class="chat-bot-bot__answers">
+                            <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_prev"></a>
+                            <a href="javascript:;" class="chat-bot-bot__answer">Главное меню</a>
+                            <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-body" id="chat-bot-chat"></div>
+        </div>
+    </div>
+</div>
