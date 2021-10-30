@@ -1,3 +1,7 @@
 @import "./chat/variables"; // Переменные
-@import "./chat/mixin.breakpoint"; // Миксины адаптива
+@import "./chat/breakpoint"; // Миксины адаптива
 @import "./chat/btn"; // Кнопка
+@import "./chat/window"; // Онко
+@import "./chat/head"; // Шапка окна
+@import "./chat/body"; // Рабочая область окна
+@import "./chat/bot"; // Бот
