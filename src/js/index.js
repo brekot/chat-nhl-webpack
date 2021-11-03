@@ -24,4 +24,20 @@ $(function(){
 
         $('.chat-bot-window').toggleClass('chat-bot-window_big');
     });
+
+    $('.js-step-next').on('click', function(){
+
+        $(this).parents('.chat-bot-step').fadeOut(200, function() {
+
+            $(this).next('.chat-bot-step').fadeIn(200);
+        });
+    });
+
+    $('.js-step-prev').on('click', function(){
+
+        $(this).parents('.chat-bot-step').fadeOut(200, function() {
+
+            $(this).prev('.chat-bot-step').fadeIn(200);
+        });
+    });
 });

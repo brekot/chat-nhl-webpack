@@ -21,22 +21,70 @@
             <div class="chat-bot-body chat-bot-body_active" id="chat-bot-bot">
                 <div class="chat-bot-bot scroll-pane">
                     <div class="chat-bot-bot__block">
-                        <div class="chat-bot-bot__question">
-                            <svg class="chat-bot-bot__question-icon">
-                                <use xlink:href="./chat/chat.svg#owl"></use>
-                            </svg>
-                            Привет! Я бот, который отвечает на вопросы. Пожалуйста, укажите тему вопроса.
+
+                        <div class="chat-bot-step chat-bot-step_active">
+
+                            <div class="chat-bot-bot__question">
+                                <svg class="chat-bot-bot__question-icon">
+                                    <use xlink:href="./chat/chat.svg#owl"></use>
+                                </svg>
+                                Привет! Я бот, который отвечает на вопросы. Пожалуйста, укажите тему вопроса.
+                            </div>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Регламент</a><br>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Общие вопросы</a>
+
                         </div>
-                        <a href="javascript:;" class="chat-bot-bot__answer">Все термины</a>
-                        <a href="javascript:;" class="chat-bot-bot__answer chat-bot-bot__answer_active">Главный судья матча</a>
-                        <a href="javascript:;" class="chat-bot-bot__answer">Главный судья НХЛ</a>
-                        <a href="javascript:;" class="chat-bot-bot__answer">Главный судья Региона</a>
-                        <a href="javascript:;" class="chat-bot-bot__answer">Дивизион</a>
-                        <div class="chat-bot-bot__answers">
-                            <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_prev"></a>
-                            <a href="javascript:;" class="chat-bot-bot__answer">Главное меню</a>
-                            <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_next"></a>
+
+                        <div class="chat-bot-step">
+
+                            <div class="chat-bot-bot__question">
+                                <svg class="chat-bot-bot__question-icon">
+                                    <use xlink:href="./chat/chat.svg#owl"></use>
+                                </svg>
+                                Пожалуйста, укажите тему вопроса.
+                            </div>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Региональный чемпионат</a>
+                            <div class="chat-bot-bot__answers">
+                                <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_prev js-step-prev"></a>
+                                <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Главное меню</a>
+                            </div>
+
                         </div>
+
+                        <div class="chat-bot-step">
+
+                            <div class="chat-bot-bot__question">
+                                <svg class="chat-bot-bot__question-icon">
+                                    <use xlink:href="./chat/chat.svg#owl"></use>
+                                </svg>
+                                Пожалуйста, укажите тему вопроса.
+                            </div>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Все термины</a>
+                            <a href="javascript:;" class="chat-bot-bot__answer chat-bot-bot__answer_active js-step-next">Главный судья матча</a>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Главный судья НХЛ</a>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Главный судья Региона</a>
+                            <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Дивизион</a>
+                            <div class="chat-bot-bot__answers">
+                                <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_prev js-step-prev"></a>
+                                <a href="javascript:;" class="chat-bot-bot__answer js-step-next">Главное меню</a>
+                                <a href="javascript:;" class="chat-bot-bot__str chat-bot-bot__str_next js-step-next"></a>
+                            </div>
+
+                        </div>
+
+                        <div class="chat-bot-step">
+
+                            <div class="chat-bot-bot__question">
+                                <svg class="chat-bot-bot__question-icon">
+                                    <use xlink:href="./chat/chat.svg#owl"></use>
+                                </svg>
+                                Термины и определения:<br>
+                                <br>
+                                Главный судья матча. Главный судья матча Регионального чемпионата
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
