@@ -1,5 +1,12 @@
 $(function(){
- 
+
+    var element = $('.chat-scroll-pane').jScrollPane({
+        autoReinitialise: true,
+        stickToBottom: true
+    });
+
+    var api = element.data('jsp');
+
     $('.js-chat-toggle-window').on('click', function(){
 
         $('.chat-bot-window').toggleClass('chat-bot-window_open');
@@ -18,11 +25,35 @@ $(function(){
         $('.chat-bot-head__link_active').removeClass('chat-bot-head__link_active');
 
         $(this).addClass('chat-bot-head__link_active');
+
+        api.reinitialise();
+        api.scrollToBottom();
     });
 
     $('.js-chat-toggle-zoom').on('click', function(){
 
         $('.chat-bot-window').toggleClass('chat-bot-window_big');
+
+       /*  setTimeout(function(){
+
+            api.reinitialise({
+                autoReinitialise: false,
+                stickToBottom: true
+            });
+
+   
+
+        }, 600);
+
+        setTimeout(function(){
+
+
+            api.reinitialise({
+                autoReinitialise: true,
+                stickToBottom: true
+            });
+
+        }, 700); */
     });
 
     $('.js-step-next').on('click', function(){
@@ -39,5 +70,32 @@ $(function(){
 
             $(this).prev('.chat-bot-step').fadeIn(200);
         });
+    });
+
+    $('.chat-bot-form__textarea-input').on('keyup', function(e){
+
+        var elem = e.target ? e.target : e;
+
+        if (elem.scrollTop > 0)
+        {
+            var height = elem.scrollHeight;
+    
+            if (height > 100) height = 100;
+    
+            elem.style.height = height + "px";
+    
+            $('.chat-bot-msg').css('height', 'calc(100% - ' + (height + 40) + 'px)')
+        }
+    });
+
+    $('.chat-bot-form__btn').on('click', function(){
+
+        var textarea = $('.chat-bot-form__textarea-input');
+
+        textarea.val('');
+
+        textarea.removeAttr('style');
+
+        $('.chat-bot-msg').removeAttr('style');
     });
 });

@@ -21,13 +21,14 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        min-height: 100%;
     }
     &__question {
         margin: 25px 0 0;
         font-size: 15px;
         line-height: 20px;
-        color: #2A313C;
-        background: #F3F4F6;
+        color: var(--chat-text);
+        background-color: var(--chat-grey3);
         border-radius: 5px;
         width: 100%;
         padding: 20px;
